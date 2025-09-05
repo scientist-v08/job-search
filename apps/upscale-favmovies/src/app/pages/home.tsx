@@ -99,16 +99,16 @@ export function Home() {
           }}
         />
       </Drawer>
-      <div className="flex gap-4 w-full justify-end items-center">
+      <div className="flex gap-4 w-full md:justify-end md:items-center md:flex-row flex-col justify-center items-center">
         <button
-          className="font-inter w-[18%] text-black bg-amber-200 dark:text-white dark:bg-pink-600 hover:bg-amber-100 dark:hover:bg-pink-500
+          className="font-inter w-[60%] md:w-[18%] text-black bg-amber-200 dark:text-white dark:bg-pink-600 hover:bg-amber-100 dark:hover:bg-pink-500
               focus:ring-2 focus:ring-amber-300 dark:focus:ring-pink-400 font-small py-2 rounded-md text-lg transition-colors"
           onClick={refreshValues}
         >
           Refresh
         </button>
         <button
-          className="font-inter w-[18%] text-black bg-amber-200 dark:text-white dark:bg-pink-600 hover:bg-amber-100 dark:hover:bg-pink-500
+          className="font-inter w-[60%] md:w-[18%] text-black bg-amber-200 dark:text-white dark:bg-pink-600 hover:bg-amber-100 dark:hover:bg-pink-500
               focus:ring-2 focus:ring-amber-300 dark:focus:ring-pink-400 font-small py-2 rounded-md text-lg transition-colors"
           onClick={open}
         >
@@ -116,7 +116,7 @@ export function Home() {
         </button>
         <button
           onClick={open1}
-          className="font-inter w-[18%] text-black bg-amber-200 dark:text-white dark:bg-pink-600 hover:bg-amber-100 dark:hover:bg-pink-500
+          className="font-inter w-[60%] md:w-[18%] text-black bg-amber-200 dark:text-white dark:bg-pink-600 hover:bg-amber-100 dark:hover:bg-pink-500
             focus:ring-2 focus:ring-amber-300 dark:focus:ring-pink-400 font-small py-2 rounded-md text-lg transition-colors"
         >
           Add new Movie +
