@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* You can add global styles to this file, and also import other style files */
+main {
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div#mainContent {
+    align-self: flex-start;
+    width: 90%;
+    height: auto;
+  }
+  div#loginSign {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  main {
+    background-color: #111827;
+  }
+}
+
+.mantine-Drawer-content {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6 !important; /* bg-gray-100 */
+  color: #1f2a44; /* text-gray-800 */
+}
+
+.mantine-Drawer-header {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6 !important; /* bg-gray-100 */
+  color: #1f2a44; /* text-gray-800 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .mantine-Drawer-content,
+  .mantine-Modal-body {
+    background-color: #111827 !important; /* dark:bg-gray-900 */
+    color: #e5e7eb; /* dark:text-gray-200 */
+  }
+  .mantine-Drawer-header,
+  .mantine-Modal-header {
+    background-color: #111827 !important; /* dark:bg-gray-900 */
+    color: #e5e7eb; /* dark:text-gray-200 */
+  }
+}
+
+.mantine-Drawer-title {
+  font-size: 1.5rem !important; /* text-2xl */
+}
+
+.mantine-Modal-title {
+  font-size: 1.5rem !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+}
