@@ -35,14 +35,18 @@ export function AddMovie({ signalParentComponentToClose }: AddMovieProps) {
       image: null,
     },
     validate: {
-      Title: (value) => (value.trim() ? null : 'Title is required'),
-      Type: (value) => (value.trim() ? null : 'Type is required'),
-      Director: (value) => (value.trim() ? null : 'Director is required'),
-      Budget: (value) => (value.trim() ? null : 'Budget is required'),
-      Location: (value) => (value.trim() ? null : 'Location is required'),
-      Duration: (value) => (value.trim() ? null : 'Duration is required'),
+      Title: (value) => (String(value).trim() ? null : 'Title is required'),
+      Type: (value) => (String(value).trim() ? null : 'Type is required'),
+      Director: (value) =>
+        String(value).trim() ? null : 'Director is required',
+      Budget: (value) =>
+        String(value).toString().trim() ? null : 'Budget is required',
+      Location: (value) =>
+        String(value).trim() ? null : 'Location is required',
+      Duration: (value) =>
+        String(value).toString().trim() ? null : 'Duration is required',
       YearOfRelease: (value) =>
-        value.trim() ? null : 'Year of Release is required',
+        String(value).trim() ? null : 'Year of Release is required',
       image: (value: any) => {
         if (!value) return 'Image is required';
         const validTypes = ['image/jpeg', 'image/jpg', 'image/png'];
